@@ -1,0 +1,35 @@
+Pingyao geographic plan / 平遥古城地理平面底图
+
+Map data: © OpenStreetMap contributors
+https://www.openstreetmap.org/copyright
+Data license: Open Database License (ODbL) 1.0
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Data snapshot: 2026-10-15T09:12:44Z
+Read-only extract endpoint: https://maps.mail.ru/osm/tools/overpass/api/interpreter
+Extract region (south, west, north, east): 37.192, 112.166, 37.217, 112.195
+Ways: highway, building, historic, barrier=city_wall; named nodes.
+
+pingyao-osm.json contains the distributed filtered geographic database under
+ODbL, including selected OSM IDs, retained tags, geometry, bounds, and all six
+landmark reference points. Usernames, changesets, business contact details and
+unneeded POIs are not retained. No coordinates were copied from commercial maps.
+
+pingyao-plan.svg is a rendered map from that data, with simplified styling.
+Its actual street and wall geometry is retained; it is not an AI illustration,
+an official survey, or a turn-by-turn navigation map. Route overlays represent
+study order, not traversable paths. Missing building footprints are not invented.
+
+Rebuild from an equivalent Overpass JSON response:
+node scripts/build-pingyao-map.mjs output/pingyao-osm.json
+
+Landmark references:
+迎薰门: https://www.openstreetmap.org/node/2495017561
+市楼: https://www.openstreetmap.org/way/1420388662
+日昇昌: https://www.openstreetmap.org/way/1448309648
+县衙: https://www.openstreetmap.org/node/2372889878
+同兴公镖局: https://www.openstreetmap.org/node/4272690689
+文庙: https://www.openstreetmap.org/way/711977279
+
+Node locations are community geographic markers. For area features the
+bounding-box center is used as a reference point, not an entrance coordinate.

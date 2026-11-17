@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f0e5">
+  <meta name="description" content="Choose a six-stop route, explore the architecture and stories of 平遥, and keep a personal journey postcard.">
+  <title>云游见筑｜My 平遥 Exploration Journey</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css?v=clues-v3-20261117">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/three-addons/"}}</script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to main content</a>
+  <header class="header">
+    <a class="brand" href="#/route" aria-label="云游见筑, back to My Route"><span class="seal">见<br>筑</span><span>云游见筑<small>平遥 · Your Own Journey</small></span></a>
+    <nav aria-label="Main navigation"><a href="#/route" data-nav="route">My Route</a><a href="#/stop" data-nav="stop">Current Stop</a><a href="#/journey" data-nav="journey">My Journey<span id="nav-count">0 / 6</span></a></nav>
+    <button id="profile" class="profile" aria-label="Edit demo nickname"><span class="avatar-dot">遥</span><span id="nickname">小遥</span><span aria-hidden="true">⌄</span></button>
+  </header>
+  <div id="storage-notice" class="storage-warning" hidden role="status"></div>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer"><span>One ancient city. Six discoveries.</span><span>Independent demo · records stay in this browser <a href="./art-credits.html" target="_blank" rel="noopener">Illustration Credits</a> <button id="about" class="text-button">About & Credits</button></span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <noscript>Enable  JavaScript  to use routes and postcards.</noscript>
+  <script type="module" src="./app.mjs?v=clues-v3-20261117"></script>
+</body>
+</html>
